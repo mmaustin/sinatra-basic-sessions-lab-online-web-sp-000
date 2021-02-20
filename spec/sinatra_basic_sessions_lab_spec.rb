@@ -6,7 +6,7 @@ describe App do
       get '/'
       expect(last_response.status).to eq(200)
     end
-
+    
     it 'renders a form to purchase an item' do 
       visit '/'
       expect(page).to have_selector("form")
